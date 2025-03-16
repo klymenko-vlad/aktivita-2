@@ -1,14 +1,17 @@
 [
   {
     "image": "img/banner1.jpg",
-    "text": "Prvý nadpis"
+    "text": "Prvý nadpis",
+    "url": "/sablona/kontakt.html"
   },
   {
     "image": "img/banner2.jpg",
-    "text": "Druhý nadpis"
+    "text": "Druhý nadpis",
+    "url": "/sablona/portfolio.html"
   },
   {
     "image": "img/banner3.jpg",
-    "text": "Tretí nadpis"
+    "text": "Tretí nadpis",
+    "url": "/sablona/qna.php"
   }
 ]
