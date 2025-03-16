@@ -29,33 +29,30 @@
     </header>
     
     <main>
-      <section class="slides-container">
-        <div class="slide fade">
-          <img src="img/banner1.jpg">
-          <div class="slide-text">
-            Prvý nadpis
-          </div>
-        </div>
-        
-        <div class="slide fade">
-          <img src="img/banner2.jpg">
-          <div class="slide-text">
-            Druhý nadpis
-          </div>
-        </div>
-        
-        <div class="slide fade">
-          <img src="img/banner3.jpg">
-          <div class="slide-text">
-            Tretí nadpis
-          </div>
-        </div>
-        
-        <a id="prev" class="prev">❮</a>
-        <a id="next" class="next">❯</a>
-        
-      </section>
-      <section class="container">
+        <?php
+        $data = file_get_contents('headings.json');
+        $headings = json_decode($data, true);
+
+        if ($headings) {
+            echo '<section class="slides-container">';
+
+            foreach ($headings as $heading) {
+                echo '<div class="slide fade">';
+                echo '<img src="' . $heading['image'] . '" alt="' . $heading['text'] . '">';
+                echo '<div class="slide-text">' . $heading['text'] . '</div>';
+                echo '</div>';
+            }
+
+            echo '<a id="prev" class="prev">❮</a>';
+            echo '<a id="next" class="next">❯</a>';
+
+            echo '</section>';
+        } else {
+            echo '🦆🦆 error';
+        }
+        ?>
+
+        <section class="container">
         <div class="row">
           <div class="col-100 text-center">
               <p><strong><em>Elit culpa id mollit irure sit. Ex ut et ea esse culpa officia ea incididunt elit velit veniam qui. Mollit deserunt culpa incididunt laborum commodo in culpa.</em></strong></p>
