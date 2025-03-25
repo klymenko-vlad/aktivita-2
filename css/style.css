@@ -88,6 +88,10 @@ header{
 .bg-dark{
   background-color:rgb(25, 25, 25);
 }
+
+.bg-light{
+  background-color: rgb(234, 234, 234);
+}
 /*FARBY TEXTOV*/
 .text-dark{
   color:rgb(25, 25, 25);
