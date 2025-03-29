@@ -1,5 +1,5 @@
 <?php
-$theme = $_GET["theme"];
+$theme = $_GET["theme"] ?? "white";
 
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 //dostavam aktualny stav z query parametru
-$theme = $_GET["theme"];
+$theme = $_GET["theme"] ?? "white";
 ?>
 
 <header style="background-color: <?php echo $theme === "dark" ? "black" : "white" ?>" class="container main-header">

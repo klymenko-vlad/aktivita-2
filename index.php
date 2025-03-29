@@ -16,7 +16,7 @@
     <?php
     include 'functions.php';
     displayBanners('headings.json');
-    $theme = $_GET["theme"];
+    $theme = $_GET["theme"] ?? "white";
 
     ?>
 
